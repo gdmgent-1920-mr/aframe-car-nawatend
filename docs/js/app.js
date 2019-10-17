@@ -4,11 +4,11 @@ AFRAME.registerSystem('_boot', {
   init() {
     console.log('init AFRAME');
     this.el.addEventListener('model-loaded', e => {
-      const suzanneEntity = document.getElementById('suzanneEntity');
+      const suzanneEntity = document.getElementById('carEntity');
       console.log(suzanneEntity);
       const suzanneMesh = suzanneEntity.getObject3D('mesh'); // THREE.Mesh
       console.debug(suzanneMesh);
-      const suzanne = suzanneMesh.getObjectByName('Suzanne');
+      const suzanne = suzanneMesh.getObjectByName('Empty');
       suzanne.material.color.setHex(0xFF0000);
       this.suzanne = suzanne;
     })
