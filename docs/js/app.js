@@ -7,17 +7,15 @@ AFRAME.registerSystem('_boot', {
       const suzanneEntity = document.getElementById('carEntity');
       console.log(suzanneEntity);
       const suzanneMesh = suzanneEntity.getObject3D('mesh'); // THREE.Mesh
-      console.debug(suzanneMesh);
-      const suzanne = suzanneMesh.getObjectByName('Empty');
-      suzanne.material.color.setHex(0xFF0000);
-      this.suzanne = suzanne;
+      console.log(suzanneMesh);
+      const myCar = suzanneMesh.getObjectByName('car_plain');
+      myCar.material.color.setHex(0xFF0000);
+      this.car = myCar;
     })
   },
   tick(time) {
-    if (this.suzanne) {
-      this.suzanne.rotateX(.05 * Math.random());
-      this.suzanne.rotateY(.05 * Math.random() * -1);
-      this.suzanne.rotateZ(.05 * Math.random());
+    if (this.car) {
+      this.car.rotateX(.05 * Math.random());
     }
   }
 })

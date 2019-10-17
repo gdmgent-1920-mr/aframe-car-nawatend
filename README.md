@@ -1,3 +1,5 @@
-# Suzanne in A-Frame
+# My car in A-Frame
 
-Student: Voornaam Familienaam
+Student: Nawang Tendar
+
+![GitHub Logo](/assets/car.jpg)
