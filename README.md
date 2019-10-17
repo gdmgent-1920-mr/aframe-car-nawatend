@@ -2,4 +2,4 @@
 
 Student: Nawang Tendar
 
-![GitHub Logo](/assets/car.jpg)
+![Rendered Car](/docs/assets/car.jpg)
